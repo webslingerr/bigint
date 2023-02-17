@@ -5,14 +5,6 @@ import (
 	"strconv"
 )
 
-func reverse(str string) (res string) {
-	for _, v := range str {
-		res = string(v)+res
-	}
-	return
-}
-
-
 func Add(a, b models.BigInt) models.BigInt {
 	val1 := a.Value
 	val2 := b.Value
