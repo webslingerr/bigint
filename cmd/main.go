@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	a, err := bigint.NewInt("2556456")
+	a, err := bigint.NewInt("4354556")
 	if err != nil {
 		panic(err)
 	}
 
-	b, err := bigint.NewInt("456656")
+	b, err := bigint.NewInt("87")
 	if err != nil {
 		panic(err)
 	}
@@ -19,8 +19,6 @@ func main() {
 	// sum := bigint.Add(a, b)
 	// fmt.Println(sum.Value)
 
-	// div := bigint.Divide(a, b)
-	// fmt.Println(div.Value)
-	mod := bigint.Mod(a, b)
-	fmt.Println(mod.Value)
+	div := bigint.Divide(a, b)
+	fmt.Println(div.Value)
 }
